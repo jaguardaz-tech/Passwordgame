@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Das ultimative Passwort-Spiel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>🔒 Das Passwort-Spiel</h1>
+            <p>Erstelle ein Passwort. Erfülle die Regeln. Verliere nicht den Verstand.</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <div class="input-wrapper">
+                    <input type="text" id="password-input" placeholder="Tippe dein Passwort hier..." autocomplete="off">
+                    <span id="char-counter" class="counter">0</span>
+                </div>
+                <button id="reset-btn" class="btn-reset">🔄 Neustart</button>
+            </div>
+
+            <div id="victory-card" class="victory-card hidden">
+                <h2>🎉 Gratulation!</h2>
+                <p>Du hast das unknackbare Passwort erstellt! Deine kognitiven Fähigkeiten sind legendär.</p>
+                <div class="final-password-box">
+                    <strong id="final-password"></strong>
+                </div>
+            </div>
+
+            <div class="rules-container">
+                <div class="rules-header">
+                    <h3>Aktive Regeln (<span id="rules-progress">0/0</span>)</h3>
+                </div>
+                <ul id="rules-list" class="rules-list"></ul>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
